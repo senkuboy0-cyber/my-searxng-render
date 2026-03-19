@@ -16,7 +16,8 @@ ui:
 search:
   safe_search: 0
   autocomplete: ""
-  default_lang: "bn-BD"
+  # Changed from "bn-BD" to "" (auto) to avoid ValueError
+  default_lang: ""
 
 enabled_plugins:
   - 'Hash plugin'
