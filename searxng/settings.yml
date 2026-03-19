@@ -1,0 +1,22 @@
+use_default_settings: true
+
+server:
+  secret_key: "rnd_searxng_secret_2026_x7k9"
+  bind_address: "0.0.0.0"
+  port: 8080
+  base_url: false
+  image_proxy: false
+
+ui:
+  static_use_hash: true
+
+search:
+  safe_search: 0
+  autocomplete: ""
+  default_lang: "bn-BD"
+
+enabled_plugins:
+  - 'Hash plugin'
+  - 'Search on category select'
+  - 'Self Informations'
+  - 'Tracker URL remover'
