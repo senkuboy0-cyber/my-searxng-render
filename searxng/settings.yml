@@ -18,6 +18,7 @@ search:
   autocomplete: ""
   # Changed from "bn-BD" to "" (auto) to avoid ValueError
   default_lang: ""
+  formats: [html, json]
 
 enabled_plugins:
   - 'Hash plugin'
