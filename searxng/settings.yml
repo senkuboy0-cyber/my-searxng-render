@@ -3,9 +3,10 @@ use_default_settings: true
 server:
   secret_key: "rnd_searxng_secret_2026_x7k9"
   bind_address: "0.0.0.0"
-  port: 7860
+  port: 8080
   base_url: false
   image_proxy: false
+  # Trust the X-Forwarded-For header from Render's load balancer
   real_ip_header: "X-Forwarded-For"
   real_ip_proxies: ["0.0.0.0/0"]
 
@@ -15,6 +16,7 @@ ui:
 search:
   safe_search: 0
   autocomplete: ""
+  # Changed from "bn-BD" to "" (auto) to avoid ValueError
   default_lang: ""
   formats: [html, json]
 
