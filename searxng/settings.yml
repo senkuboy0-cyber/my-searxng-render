@@ -1,7 +1,7 @@
 use_default_settings: true
 
 server:
-  secret_key: "rnd_searxng_secret_2026_x7k9"
+  secret_key: "${SEARXNG_SECRET_KEY}"
   bind_address: "0.0.0.0"
   port: 8080
   base_url: false
