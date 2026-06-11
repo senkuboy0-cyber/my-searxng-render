@@ -3,9 +3,9 @@ use_default_settings: true
 server:
   secret_key: "rnd_searxng_secret_2026_x7k9"
   bind_address: "0.0.0.0"
-  port: 8080
+  port: 10000
   base_url: false
-  image_proxy: false
+  image_proxy: true
   limiter: false
   real_ip_header: "X-Forwarded-For"
   real_ip_proxies: ["0.0.0.0/0"]
@@ -18,6 +18,7 @@ outgoing:
 
 ui:
   static_use_hash: true
+  infinite_scroll: true
 
 search:
   safe_search: 0
