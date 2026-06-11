@@ -10,8 +10,8 @@ server:
   real_ip_proxies: ["0.0.0.0/0"]
 
 outgoing:
-  request_timeout: 3.0
-  max_request_timeout: 6.0
+  request_timeout: 3.0       # ৩ সেকেন্ডের বেশি লাগলে engine skip
+  max_request_timeout: 6.0   # সর্বোচ্চ ৬ সেকেন্ড
   pool_connections: 100
   pool_maxsize: 20
 
