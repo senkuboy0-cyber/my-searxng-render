@@ -10,8 +10,8 @@ server:
   real_ip_proxies: ["0.0.0.0/0"]
 
 outgoing:
-  request_timeout: 5.0
-  max_request_timeout: 10.0
+  request_timeout: 3.0
+  max_request_timeout: 6.0
   pool_connections: 100
   pool_maxsize: 20
 
@@ -22,31 +22,7 @@ search:
   safe_search: 0
   autocomplete: ""
   default_lang: ""
-  formats:
-    - html
-    - json
-    - csv
-    - rss
-
-categories_as_tabs:
-  general:
-  images:
-  videos:
-  news:
-  music:
-  files:
-  it:
-  science:
-  social_media:
-  map:
-
-engines:
-  - name: ahmia
-    disabled: true
-  - name: torch
-    disabled: true
-  - name: radio browser
-    disabled: true
+  formats: [html, json]
 
 enabled_plugins:
   - 'Hash plugin'
